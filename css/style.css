@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext");
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: Poppins, sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+
+
+/* ------------------------------ */
+
+[class*="__conteiner"] {
+	max-width: 1020px;
+	margin: 0px auto;
+}
+
+/* ..CUSTOMERS.. */
+
+.customers {
+	margin-bottom: 20px;
+}
+
+.customers__block {
+	max-width: 564px;
+	margin: 0 auto;
+	background: #f5f7ff;
+	padding: 37px 60px 0 57px;
+}
+
+.customers__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.customers__title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.customers__subtitle {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 2.14;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.customers__name {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.07;
+	color: #000000;
+}
+
+.customers__name::after {
+	content: " *";
+	color: #c94d3f;
+}
+
+.customers__email {
+	margin-bottom: 20px;
+}
+
+.customers__pass {
+	margin-bottom: 20px;
+}
+
+.data-input {
+	padding: 20px 17px;
+	background: #ffffff;
+	border: 1px solid #a2a6b0;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #000000;
+}
+
+.customers__button {
+	display: flex;
+	column-gap: 23px;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.customers__butt {
+	flex: 0 1 150px;
+}
+.customers__link {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #0156ff;
+}
+
+.butt {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #fff;
+	background-color: #0156ff;
+	border-radius: 50px;
+	padding: 15px 0;
+}
+
+/* ..SUMMARY.. */
+
+.summary {
+	padding: 30px 0px 0px 0px;
+	margin-bottom: 20px;
+}
+
+.summary__block {
+	max-width: 446px;
+	margin: 0 auto;
+	background: #f5f7ff;
+	padding: 12px 30px 0 30px;
+}
+
+.summary__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.5;
+	color: #000000;
+	margin-bottom: 18px;
+}
+
+.summary__subtitle {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #000000;
+	margin-bottom: 12px;
+}
+
+.summary__list {
+	padding: 0 90px 0 0;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #666666;
+	margin-bottom: 12px;
+}
+
+.summary__form {
+	display: flex;
+	flex-direction: column;
+	color: #000000;
+}
+
+.summary__name {
+	padding: 14px 0px;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+}
+
+.summary__country {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.43;
+}
+
+.summary__check {
+	display: flex;
+	align-items: flex-start;
+}
+
+.summary__text {
+	position: relative;
+	padding: 0 0 0 29px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #000000;
+}
+
+.summary__subsubtitle {
+	padding: 29px 0 0 0;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #000000;
+	margin-bottom: 12px;
+}
+
+.summary__apply {
+	margin-bottom: 20px;
+}
+.summary__butt {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #0156ff;
+	border: 2px solid #0156ff;
+	box-sizing: border-box;
+	border-radius: 50px;
+	padding: 12px 0;
+	margin-bottom: 20px;
+}
+
+/* ..APPOINTMENT.. */
+
+.appointment {
+	font-family: Roboto, sans-serif;
+}
+.appointment__container {
+	display: flex;
+}
+.appointment__block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 585px;
+	margin: 0 auto;
+}
+.appointment__form {
+	flex: 0 1 57%;
+	background: #5d62b5;
+	border-radius: 40px;
+	padding: 78px 57px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.appointment__title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 48px;
+}
+.appointment__items {
+	display: flex;
+	row-gap: 22px;
+	flex-wrap: wrap;
+	margin: 0 -11px;
+}
+.appointment__item {
+	padding: 0 11px;
+	flex: 0 1 50%;
+}
+.appointment__file {
+	background: #5d62b5;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #ffffff;
+	padding: 15px 23px;
+	width: 100%;
+	border: 2px solid #ffffff;
+	border-radius: 10px;
+}
+
+.appointment__file::placeholder {
+	color: #ffffff;
+}
+
+.appointment__item_box {
+	flex: 1 1 100%;
+	margin-bottom: 30px;
+}
+
+.appoint__file_text {
+	resize: none;
+}
+
+.appointment__buttons {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.appointment-button {
+	padding: 19px 34px;
+	font-weight: 700;
+	font-size: 12px;
+	border-radius: 8px;
+	text-align: center;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: #f2726f;
+}
+
+/* ..SHIPPING.. */
+
+.shipping {
+	margin-bottom: 20px;
+}
+
+.shipping__container {
+	max-width: 565px;
+	margin: 0 auto;
+	background: #f5f7ff;
+	padding: 10px 20px;
+}
+
+.shipping__block {
+	padding: 20px 10px;
+}
+
+.shipping__title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #000000;
+	margin-bottom: 15px;
+}
+
+.shipping__line {
+	background-color: #cacdd8;
+	height: 2px;
+}
+
+.shipping__form {
+	padding: 25px 0 0 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.shipping__name {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+	color: #000000;
+	padding: 14px 0;
+}
+
+.shipping__lastname {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+	color: #000000;
+	padding: 14px 0;
+}
+
+.shipping__label::after {
+	content: " *";
+	color: #c94d3f;
+}
+
+.shipping__email {
+	margin-bottom: 20px;
+}
+
+.shipping__subtitle {
+	margin-bottom: 20px;
+}
+
+.shipping__address1 {
+	margin-bottom: 11px;
+}
+
+.shipping__telefone {
+	margin-bottom: 35px;
+}
+
+.shipping__button {
+	padding: 20px 0 0 0;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.shipping__butt {
+	flex: 0 1 210px;
+}

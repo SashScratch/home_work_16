@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home_work_</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="main">
+			<div class="customers">
+				<div class="customers__container">
+					<div class="customers__block">
+						<form class="customers__form" action="#">
+							<h2 class="customers__title">Registered Customers</h2>
+							<h2 class="customers__subtitle">If you have an account, sign in with your email address.</h2>
+							<div class="customers__name">Email</div>
+							<input class="customers__email data-input" required type="email" id="email"
+								placeholder="Your e-mail">
+							<div class="customers__name">Password</div>
+							<input class="customers__pass data-input" required type="password" id="password"
+								placeholder="Your password">
+							<div class="customers__button">
+								<button class="customers__butt butt" type="submit">Sign In</button>
+								<a class="customers__link" href="#">Forgot Your Password?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="summary">
+				<div class="summary__container">
+					<div class="summary__block">
+						<h2 class="summary__title">Summary</h2>
+						<h2 class="summary__subtitle">Estimate Shipping and Tax</h2>
+						<div class="summary__list">Enter your destination to get a shipping estimate.</div>
+						<form class="summary__form" action="#">
+							<div class="summary__name">Country</div>
+							<select class="summary__country data-input" name="country" id="country">
+								<option value="1" selected="selected">Australia</option>
+								<option value="2">UK</option>
+								<option value="2">USA</option>
+								<option value="2">Germany</option>
+								<option value="2">Sweden</option>
+							</select>
+
+							<div class="summary__name">State/Province</div>
+							<input class="summary__state data-input" type="text" name="text" id="state">
+							<div class="summary__name">Zip/Postal Code</div>
+							<input class="summary__zip data-input" type="text" name="zip" id="zip">
+
+							<!-- <div class="summary__name">Standard Rate</div>
+							<div class="summary__check">
+								<input checked="checked" type="radio" name="check" value="rate" id="rate">
+								<div class="summary__text checklist" for="rate">Price may vary depending on the
+									item/destination. Shop Staff will contact you. $21.00</div>
+							</div>
+
+							<div class="summary__name">Pickup from store</div>
+							<div class="summary__check">
+								<input type="radio" name="check" value="pickup" id="pickup">
+								<div class="summary__text checklist" for="pickup">1234 Street Adress City Address, 1234 $0.00
+								</div>
+							</div> -->
+							<div class="summary__subsubtitle">Apply Discount Code</div>
+							<div class="summary__name">Enter discount code</div>
+							<input class="summary__apply data-input" type="text" name="apply" id="apply"
+								placeholder="Enter discount code">
+							<button class="summary__butt" type="submit">Apply Discount</button>
+
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="appointment">
+				<div class="appointment__container">
+					<div class="appointment__block">
+						<form class="appointment__form" action="#">
+							<h2 class="appointment__title">Make an appointment</h2>
+							<div class="appointment__items">
+								<div class="appointment__item">
+									<input class="appointment__file" type="text" name="name" placeholder="Name">
+								</div>
+								<div class="appointment__item">
+									<input class="appointment__file" type="text" name="mail" placeholder="Email">
+								</div>
+								<div class="appointment__item">
+									<input class="appointment__file" type="text" name="phone" placeholder="Phone Number">
+								</div>
+								<div class="appointment__item">
+									<input class="appointment__file" type="text" name="select" placeholder="Select Service">
+								</div>
+								<div class="appointment__item appointment__item_box">
+									<textarea class="appointment__file appoint__file_text" rows="4" name="text"
+										placeholder="Tell us about your puppers include his/her name"></textarea>
+								</div>
+							</div>
+							<div class="appointment__buttons">
+								<button type="submit" class="appointment__butt appointment-button">Make an Appointment</button>
+							</div>
+
+
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="shipping">
+				<div class="shipping__container">
+					<div class="shipping__block">
+						<h2 class="shipping__title">Shipping Address</h2>
+						<hr class="shipping__line">
+						<form class="shipping__form" action="#">
+							<div class="shipping__name">Email Address</div>
+							<input class="shipping__email data-input" required type="email" name="email">
+							<div class="shipping__subtitle">You can create an account after checkout.</div>
+							<hr class="shipping__line">
+							<div class="shipping__name">First Name</div>
+							<input class="shipping__name data-input" required type="name" name="name">
+							<div class="shipping__lastname">Last Name</div>
+							<input class="shipping__lastname data-input" required type="lastname" name="lastname">
+							<div class="shipping__name">Company</div>
+							<input class="shipping__company data-input" required type="text" name="company">
+							<div class="shipping__name">Street Address</div>
+							<input class="shipping__address1 data-input" required type="text" name="address1">
+							<input class="shipping__address2 data-input" type="text" name="address2">
+							<div class="shipping__name">City</div>
+							<input class="shipping__city data-input" required type="text" name="city">
+							<div class="shipping__name">State/Province</div>
+							<select class="shipping__state data-input" name="state">
+								<option value="" disabled="disabled" selected="selected">Please, select a region, state or
+									province</option>
+								<option value="1">State/Province№1</option>
+								<option value="2">State/Province№2</option>
+								<option value="3">State/Province№3</option>
+								<option value="4">State/Province№4</option>
+								<option value="5">State/Province№5</option>
+								<option value="6">State/Province№6</option>
+								<option value="7">State/Province№7</option>
+							</select>
+							<div class="shipping__name">Zip/Postal Code</div>
+							<input class="shipping__zip data-input" required type="text" name="zip">
+							<div class="shipping__name">Country</div>
+							<select class="shipping__country data-input" name="country">
+								<option value="1" selected="selected">Country#1</option>
+								<option value="2">Country#2</option>
+								<option value="3">Country#3</option>
+								<option value="4">Country#4</option>
+								<option value="5">Country#5</option>
+								<option value="6">Country#6</option>
+								<option value="7">Country#7</option>
+							</select>
+							<div class="shipping__name">Phone Number</div>
+							<input class="shipping__telefone data-input" required type="tel" name="tel">
+							<hr class="shipping__line">
+							<div class="shipping__button">
+								<button class="shipping__butt butt" type="submit">Next</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<footer hidden class="footer"></footer>
+	</div>
+</body>
+
+</html>
